@@ -53,3 +53,11 @@ python manage.py runserver
 python manage.py makemigrations
 python manage.py migrate
 ```
+## Ищу работу Python/Django разработчика
+* Мое резюме:
+
+https://hh.ru/resume/41d90dbaff07b531f00039ed1f4f39586c7779
+* Мой Telegram для предложений:
+```bash 
+@Andron79
+```
