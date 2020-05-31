@@ -24,8 +24,3 @@ class QuestionListSerializers(serializers.ModelSerializer):
     class Meta:
         model = Question
         fields = ('title', 'date_start', 'date_close', 'text', 'answer_id')
-
-# {
-# "answer": "Пурпурный",
-# "question_id": "1"
-# }

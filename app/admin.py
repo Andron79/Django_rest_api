@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Question, Answer  # QuestionBody
-# from .forms import QuestionBodyAdminForms
+from .models import Question, Answer
 
 
 class AnswerInline(admin.TabularInline):
@@ -9,7 +8,6 @@ class AnswerInline(admin.TabularInline):
 
 
 class QuestionAdmin(admin.ModelAdmin):
-    # form = QuestionBodyAdminForms  # TODO
     list_display = ['title', 'date_start', 'date_close', 'text']
     fieldsets = [
         (None, {'fields': ['title']}),
@@ -20,13 +18,6 @@ class QuestionAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Question, QuestionAdmin)
-
-
-# class QuestionBodyAdmin(admin.ModelAdmin):
-#     list_display = ['choice_type', 'choice', 'text']
-#
-#
-# admin.site.register(QuestionBody, QuestionBodyAdmin)
 
 
 class AnswerAdmin(admin.ModelAdmin):
